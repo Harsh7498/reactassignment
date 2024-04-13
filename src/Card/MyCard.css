@@ -1,0 +1,14 @@
+.MyCardClass{
+    display: block;
+    width: 20rem;
+    margin-left: 50%;
+    margin-top:5%;
+}
+.border{
+    borderBottom: "2px solid lightgray";
+    width: "100%";
+  }
+  .container{
+    display: "flex";
+    alignItems: "center";
+  }

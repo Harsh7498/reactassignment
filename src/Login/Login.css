@@ -1,0 +1,15 @@
+.Login{
+    width:50%;
+    margin-left: 20%;
+    margin-top: 10%;
+}
+.ButtonCls{
+    margin-top: 3%;
+    margin-left: 40%;
+    background-color: red;
+}
+.btn-custom {
+    margin-top: 3%;
+    margin-left: 40%;
+    color: red;
+}
