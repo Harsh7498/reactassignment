@@ -6,6 +6,8 @@ import MyNavbar from './Navbar/Navbar';
 import MyCard from './Card/MyCard';
 import Signup from './Signup/Signup';
 import './App.css';
+import Products from './Products/Products';
+import Classes from './Classes/Classes';
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
       <Route path='/nav' element={<MyNavbar/>}></Route>
       <Route path='/card' element={<MyCard/>}></Route>
       <Route path='/signup' element={<Signup/>}></Route>
+      <Route path='/products' element={<Products/>}></Route>
+      <Route path='/classes' element={<Classes/>}></Route>
     </Routes>
     </>
   );

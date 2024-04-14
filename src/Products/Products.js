@@ -3,12 +3,12 @@ import PropTypes from 'prop-types';
 //import { LoginWrapper } from './Login.styled';
 import {InputText} from 'primereact';
 import Form from "react-bootstrap/Form";
-import "./Home.css";
+import "./Products.css";
 import Button from "react-bootstrap/Button";
 import MyNavbar from '../Navbar/Navbar';
 import MyCard from '../Card/MyCard';
 
-class Home extends React.Component
+class Products extends React.Component
 {
     constructor(props)
     {
@@ -38,7 +38,20 @@ class Home extends React.Component
             <>
             <div class="row ">
             <MyNavbar/>
-            <span><p class="pClass">Welcome to Course Portal</p></span>
+            </div>
+        
+                
+            <div class="row">
+                {/* <MyCard data="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae 
+                    numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!"/> */
+                    this.state.data.map((d)=>{
+                        return (
+                            <>
+                            <MyCard data={d.text} price={d.price} isProducts="true"/>
+                            </>
+                        )
+                    })
+                    }
             </div>
             
             </>
@@ -47,4 +60,4 @@ class Home extends React.Component
         );
     }
 }
-export default Home;
+export default Products;

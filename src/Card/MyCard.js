@@ -53,6 +53,7 @@ class MyCard extends React.Component
             
             <>
             {
+                this.props.isProducts &&
                 <>
                 <div className="card flex justify-content-center">
             <Image  alt="Image" width="250" />
@@ -71,6 +72,27 @@ class MyCard extends React.Component
                 <Divider/>
             </Card>
             </>
+            }
+            {
+                this.props.isClass &&
+                <>
+                <div className="card flex justify-content-center">
+            <Image  alt="Image" width="250" />
+        </div>
+                <Card title="Class"   className=" MyCardClass">
+                <p className="mx-auto ">
+                    {this.props.data}
+                </p>
+                
+                <div class="row">
+                    <div class="col-sm-5">
+                    <Button variant="primary">Practice</Button>
+                </div>
+                </div>
+                <br/>
+                <Divider/>
+            </Card>
+            </> 
             }
             </>
         )

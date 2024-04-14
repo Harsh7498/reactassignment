@@ -18,7 +18,8 @@ validateForm() {
  handleSubmit(event) {
 
     event.preventDefault();
-
+    //this.props.history.push('/home');
+    window.location.href='/home';
   }
 render() {
  return(
@@ -67,7 +68,7 @@ render() {
 
                 </Form.Group>
 
-                <Button block size="lg" variant="custom" type="submit"  disabled={!this.validateForm()}>
+                <Button block size="lg" variant="custom" type="submit"  disabled={!this.validateForm()} onClick={this.handleSubmit}>
 
                    Login
 
@@ -82,9 +83,9 @@ render() {
     </form>
  );
 }
-constructor(props)
+constructor(props,context)
 {
-   super(props);
+   super(props,context);
 this.state={
    email:String,
    password:String
